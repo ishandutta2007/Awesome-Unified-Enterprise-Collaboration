@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.1" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+
+    <!-- Inline Animation Styles -->
+    <style>
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+      @keyframes floatReverse {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(12px); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.04); }
+      }
+      @keyframes streamFlow {
+        0% { stroke-dashoffset: 100; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes orbit {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .anim-float1 {
+        animation: floatSlow 7s ease-in-out infinite;
+      }
+      .anim-float2 {
+        animation: floatReverse 8s ease-in-out infinite;
+      }
+      .anim-glow {
+        animation: pulseGlow 5s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .stream-line {
+        stroke-dasharray: 8 12;
+        animation: streamFlow 20s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base Canvas -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+
+  <!-- Animated Glowing Background Orbs -->
+  <circle cx="150" cy="80" r="140" fill="url(#glowGrad)" class="anim-glow" filter="url(#glow)" />
+  <circle cx="1060" cy="270" r="160" fill="url(#glowGrad)" class="anim-glow" filter="url(#glow)" style="animation-delay: -2.5s;" />
+
+  <!-- Background Isometric / Circuit Connection Grid -->
+  <g opacity="0.12" stroke="#94a3b8" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="270" x2="1200" y2="270" />
+    <line x1="200" y1="0" x2="200" y2="360" />
+    <line x1="400" y1="0" x2="400" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="800" y1="0" x2="800" y2="360" />
+    <line x1="1000" y1="0" x2="1000" y2="360" />
+  </g>
+
+  <!-- Flowing Data Streams (Behind text) -->
+  <path d="M 50,290 C 250,290 320,80 580,75 C 800,70 950,290 1150,285" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.3" class="stream-line" />
+  <path d="M 80,310 C 300,310 380,240 600,240 C 820,240 900,90 1120,95" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.25" class="stream-line" style="animation-duration: 15s; animation-direction: reverse;" />
+
+  <!-- Floating Dynamic Collaboration Badges & Module Nodes (Background Depth) -->
+  <!-- Left Side Badges -->
+  <g class="anim-float1">
+    <g filter="url(#cardShadow)">
+      <rect x="45" y="60" width="165" height="42" rx="21" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.4" />
+      <circle cx="68" cy="81" r="11" fill="#0284c7" />
+      <text x="68" y="85" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="12" fill="#ffffff">💬</text>
+      <text x="90" y="86" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Team Chat</text>
+    </g>
+
+    <g filter="url(#cardShadow)">
+      <rect x="65" y="240" width="180" height="42" rx="21" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1.2" stroke-opacity="0.4" />
+      <circle cx="88" cy="261" r="11" fill="#4f46e5" />
+      <text x="88" y="265" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="12" fill="#ffffff">📹</text>
+      <text x="110" y="266" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">WebRTC Video</text>
+    </g>
+  </g>
+
+  <!-- Right Side Badges -->
+  <g class="anim-float2">
+    <g filter="url(#cardShadow)">
+      <rect x="980" y="65" width="175" height="42" rx="21" fill="url(#cardGrad)" stroke="#c084fc" stroke-width="1.2" stroke-opacity="0.4" />
+      <circle cx="1003" cy="86" r="11" fill="#9333ea" />
+      <text x="1003" y="90" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="12" fill="#ffffff">🚀</text>
+      <text x="1025" y="91" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Work OS &amp; Task</text>
+    </g>
+
+    <g filter="url(#cardShadow)">
+      <rect x="965" y="240" width="190" height="42" rx="21" fill="url(#cardGrad)" stroke="#34d399" stroke-width="1.2" stroke-opacity="0.4" />
+      <circle cx="988" cy="261" r="11" fill="#059669" />
+      <text x="988" y="265" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="12" fill="#ffffff">🔒</text>
+      <text x="1010" y="266" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Self-Hosted Hubs</text>
+    </g>
+  </g>
+
+  <!-- Foreground Title Card / Container -->
+  <g filter="url(#cardShadow)">
+    <rect x="230" y="55" width="740" height="248" rx="24" fill="#090d16" fill-opacity="0.75" stroke="#334155" stroke-width="1" />
+  </g>
+
+  <!-- Top Pill / Status Tag -->
+  <g>
+    <rect x="465" y="78" width="270" height="28" rx="14" fill="#1e293b" stroke="#475569" stroke-width="1" />
+    <circle cx="482" cy="92" r="5" fill="#10b981">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="498" y="96" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="11.5" font-weight="600" fill="#cbd5e1" letter-spacing="1">CURATED ENTERPRISE ECOSYSTEM</text>
+  </g>
+
+  <!-- Central Header Text (Clear, High Contrast Foreground) -->
+  <g id="header-text">
+    <!-- Main Title -->
+    <text x="600" y="160" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="800" fill="url(#primaryGrad)" letter-spacing="-0.5">
+      Unified Enterprise Collaboration
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="202" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="15.5" font-weight="500" fill="#f1f5f9">
+      Curated List of SaaS Products &amp; Open-Source Self-Hosted Workspaces
+    </text>
+
+    <!-- Secondary Tagline -->
+    <text x="600" y="235" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="400" fill="#94a3b8">
+      Team Chat • Video Conferencing • Project Management • Digital Sovereignty
+    </text>
+  </g>
+
+  <!-- Bottom Accent Highlights -->
+  <g>
+    <rect x="420" y="264" width="105" height="22" rx="11" fill="#1e293b" />
+    <text x="472" y="279" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="11" font-weight="600" fill="#38bdf8">☁️ SaaS Leader</text>
+
+    <rect x="545" y="264" width="110" height="22" rx="11" fill="#1e293b" />
+    <text x="600" y="279" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="11" font-weight="600" fill="#a855f7">⚡ Open Source</text>
+
+    <rect x="675" y="264" width="105" height="22" rx="11" fill="#1e293b" />
+    <text x="727" y="279" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="11" font-weight="600" fill="#34d399">🛡️ Self-Hosted</text>
+  </g>
+
+  <!-- Border Accent Framing -->
+  <rect x="1" y="1" width="1198" height="358" rx="8" fill="none" stroke="#1e293b" stroke-width="1.5" />
+</svg>
