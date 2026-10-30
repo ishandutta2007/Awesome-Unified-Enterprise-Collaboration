@@ -1,269 +1,121 @@
-# Awesome-Unified-Enterprise-Collaboration
+# Awesome Unified Enterprise Collaboration [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## Top Unified Enterprise Collaboration Ecosystem
+> A curated list of leading enterprise collaboration platforms, unified workplace communication suites, and self-hosted open-source alternatives.
 
+**Focused on Team Chat, Video Conferencing, Work Management & Self-Hosted Digital Workspaces.**
 
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Team Chat, Video Conferencing & Self-Hosted Digital Workspaces*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Unified Enterprise Collaboration**. These tools enable organizations to consolidate messaging, video meetings, file sharing, and project work into connected digital environments—reducing tool sprawl while maintaining the security and data sovereignty that enterprises require.
-
-
-
-**Examples** include Atlassian One, Microsoft Teams, Slack, Google Workspace, Zoom Workplace, Cisco Webex, Lark, Notion, Asana, and Monday.com (the category leaders).
-
-
-
-**Open-source emphasis**: Unified Enterprise Collaboration is a domain where open-source tooling is **mature at the component level but requires assembly for a unified experience**. **Nextcloud Hub** is the strongest all-in-one open-source alternative to Microsoft 365 and Google Workspace, bundling file sync, email, calendar, contacts, office suite, and Kanban boards in a single platform . **Rocket.Chat** provides the most versatile open-source messenger with omnichannel support and federation . **Matrix + Element** with **Jitsi** delivers end-to-end encrypted chat and video conferencing . For Atlassian replacements, **OpenProject** (project management) and **XWiki** (knowledge management) have partnered to offer an integrated open-source alternative to Jira and Confluence . The critical gap: **no single open-source project replicates the seamless integration of Microsoft Teams or Slack**—teams typically assemble 3–5 tools (Nextcloud for files, Rocket.Chat for messaging, Jitsi for video, OpenProject for tasks) to match what a unified SaaS suite provides out of the box.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Atlassian One](https://www.atlassian.com/)**  
-
-  Unified platform combining Jira (project tracking), Confluence (knowledge management), and Loom (async video) with shared identity and cross-product search; Atlassian has announced end-of-life for Data Center offerings, pushing organizations toward cloud or open-source alternatives .
-
-
-
-- **[Microsoft Teams](https://www.microsoft.com/en-us/microsoft-teams)**  
-
-  Integrated collaboration hub within Microsoft 365; combines chat, video meetings, file storage (SharePoint/OneDrive), and app integrations. Deeply embedded in enterprise workflows but subject to data residency concerns under US Cloud Act .
-
-
-
-- **[Slack](https://slack.com/)**  
-
-  Channel-based messaging platform with extensive app ecosystem, huddles (audio/video), and workflow automation; the benchmark for team chat UX but lacks native document/database depth.
-
-
-
-- **[Google Workspace](https://workspace.google.com/)**  
-
-  Integrated suite with Gmail, Drive, Docs, Meet, and Chat; strong for real-time document collaboration but per-seat pricing scales with headcount.
-
-
-
-- **[Zoom Workplace](https://www.zoom.com/)**  
-
-  Video-first collaboration platform with meetings, chat, phone, and whiteboard; expanded beyond video into broader workplace tools.
-
-
-
-- **[Cisco Webex](https://www.webex.com/)**  
-
-  Enterprise collaboration suite with meetings, messaging, calling, and devices; strong for organizations already standardized on Cisco networking.
-
-
-
-- **[Lark](https://www.larksuite.com/)**  
-
-  ByteDance's all-in-one collaboration suite combining chat, docs, calendar, video, and approval workflows; popular in Asia-Pacific with aggressive pricing.
-
-
-
-- **[Notion](https://www.notion.com/)**  
-
-  All-in-one workspace combining wikis, docs, and databases; strong for knowledge management but lighter on real-time communication and video.
-
-
-
-- **[Asana](https://asana.com/)**  
-
-  Work management platform with tasks, projects, goals, and portfolios; focused on work tracking rather than communication or document collaboration.
-
-
-
-- **[Monday.com](https://monday.com/)**  
-
-  Work OS with customizable boards, dashboards, and automation; focused on project and workflow management rather than unified communication.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### All-in-One Workspace Suites
-
-
-
-- **[Nextcloud Hub](https://github.com/nextcloud/server)**  
-
-  The most comprehensive open-source **Microsoft 365/Google Workspace alternative** (AGPL-3.0, 37,000+ GitHub stars) . Bundles **Nextcloud Files** (sync/share), **Nextcloud Groupware** (Mail, Calendar, Contacts), **Nextcloud Office** (real-time document/spreadsheet/presentation editing via Collabora or Euro-Office), **Nextcloud Talk** (video conferencing and chat), **Nextcloud Deck** (Kanban/Gantt boards), and **Nextcloud Assistant** (AI for drafting, summarizing, translating) . Recognized as the highest-scoring European collaboration tool for digital sovereignty (score 98/100) . **The strongest open-source foundation for replacing a full productivity suite**—but it is a platform you self-host and maintain, not a managed service.
-
-
-
-- **[Huly](https://github.com/hcengineering/platform)**  
-
-  Open-source **all-in-one project management platform** positioned as a self-hostable alternative to Linear, Jira, Slack, and Notion (EPL-2.0, ~28k GitHub stars) . Combines project tracking, team chat, virtual office, and collaborative docs in a single workspace. **The closest open-source attempt at a unified "everything app"** for software teams—though each module is less deep than dedicated tools.
-
-
-
-- **[Colanode](https://github.com/colanode/colanode)**  
-
-  Local-first collaboration platform combining real-time chat, rich text pages, databases, and file management (Apache-2.0, ~5.2k GitHub stars) . Positioned as a self-hostable Slack/Notion alternative with offline-first architecture. **Note**: last commit was 7 months ago (as of October 2026), so verify maintenance status before adoption .
-
-
-
-### Team Chat & Messaging
-
-
-
-- **[Rocket.Chat](https://github.com/RocketChat/Rocket.Chat)**  
-
-  The most versatile open-source **team communication platform** (MIT, ~46k GitHub stars) . Features: **omnichannel customer service** (live chat, email, social in one inbox), **federated messaging** via Matrix (communicate with other Rocket.Chat instances), extensive app marketplace, self-hosted with end-to-end encryption, and no user limits on Community Edition . **The strongest open-source Slack alternative**—users note it can feel resource-heavy on small servers and the UI can feel cluttered compared to leaner tools .
-
-
-
-- **[Mattermost](https://github.com/mattermost/mattermost)**  
-
-  Open-source team messaging platform (MIT, ~39k GitHub stars) designed for organizations with strict security requirements; supports air-gapped deployments and zero-trust security . Strong for government and regulated industries needing data sovereignty.
-
-
-
-- **[Element (Matrix)](https://github.com/vector-im/element-web)**  
-
-  Client for the **Matrix protocol**—an open, federated standard for real-time communication (Apache-2.0) . Features: **end-to-end encryption via Olm/Megolm** (standard, not premium), federation or isolation, bridges to Slack/Teams/Telegram/Signal, and Spaces/threads . **The strongest open-source option for E2E-encrypted chat**—but mobile push notifications are not quite at Slack's level, and users need 2–4 weeks to adjust .
-
-
-
-- **[Zulip](https://github.com/zulip/zulip)**  
-
-  Open-source team chat with a **threading model** that organizes conversations by topic within streams, reducing notification overload . Best for teams drowning in unstructured chat threads.
-
-
-
-### Video Conferencing
-
-
-
-- **[Jitsi Meet](https://github.com/jitsi/jitsi-meet)**  
-
-  The proven open-source **Zoom/Webex/Google Meet alternative** (Apache-2.0) . Features: **no participant limit**, browser-first (no software install for guests), selective forwarding via Jitsi Videobridge for scale, optional E2E encryption for small calls, recording/streaming via Jibri, and SIP dial-in via Jigasi . **The standard for self-hosted video conferencing**—excellent call quality even on modest hardware, with commercial support available from 8×8 .
-
-
-
-- **[OpenTalk](https://github.com/opentalk/opentalk)**  
-
-  German open-source video conferencing solution (score 97/100 for digital sovereignty) . Positioned as a GDPR-compliant Zoom alternative for European organizations.
-
-
-
-### Project Management & Knowledge Management (Atlassian Alternatives)
-
-
-
-- **[OpenProject](https://github.com/opf/openproject)**  
-
-  Leading open-source project management software (GPL-3.0, ~16k GitHub stars) with Gantt charts, Agile boards, time tracking, and portfolio views . Has **partnered with XWiki** to offer an integrated open-source alternative to Jira + Confluence, with bidirectional integration for linking tasks and documentation . **The strongest open-source Jira alternative** with active migration tooling from Atlassian.
-
-
-
-- **[XWiki](https://github.com/xwiki/xwiki-platform)**  
-
-  Open-source knowledge management platform positioned as a **Confluence alternative**; flexible, extensible, and vendor-neutral . When paired with OpenProject, provides a complete Atlassian replacement stack .
-
-
-
-- **[Plane](https://github.com/makeplane/plane)**  
-
-  Open-source Jira/Linear/Monday/ClickUp alternative (~61k GitHub stars) with work items, cycles, modules, and five layout views . The most mature open-source task management platform.
-
-
-
-### Document Collaboration
-
-
-
-- **[Collabora Online](https://github.com/CollaboraOnline/online)**  
-
-  Open-source online office suite (MPL-2.0) that integrates with Nextcloud to provide real-time collaborative document, spreadsheet, and presentation editing . Compatible with Microsoft Office formats (DOCX, XLSX, PPTX).
-
-
-
-- **[CryptPad](https://github.com/cryptpad/cryptpad)**  
-
-  Privacy-focused open-source collaboration suite (AGPL-3.0) with end-to-end encrypted documents, spreadsheets, presentations, and whiteboards; score 97/100 for digital sovereignty . **The strongest option for E2E-encrypted document collaboration**.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **HumHub** — Open-source social network / collaboration platform (AGPL-3.0); score 97/100 for digital sovereignty . Best for community and internal social collaboration rather than task/chat focus.
-
-- **HedgeDoc** — Real-time collaborative Markdown editor (AGPL-3.0); score 98/100, the highest European collaboration score . **Documentation-focused**—not a full workspace.
-
-- **openDesk** — German government-backed open-source workspace suite (Community Edition) combining office, chat, video, and file sync; tested by c't magazine but noted as challenging to self-host . **Public sector focused**—verify maturity before enterprise adoption.
-
-
-
-**Frameworks for building custom systems**: The choice depends on which "unified" slice matters most. For **full Microsoft 365/Google Workspace replacement**, Nextcloud Hub provides the most complete open-source stack . For **Slack replacement with omnichannel**, Rocket.Chat . For **E2E-encrypted chat and video**, Matrix/Element + Jitsi . For **Jira + Confluence replacement**, OpenProject + XWiki . No single open-source project delivers the **seamless integration of Microsoft Teams or Slack**—teams typically assemble 3–5 tools to match what a unified SaaS suite provides.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Unified collaboration platforms handling organizational communication and data must comply with applicable privacy regulations (GDPR, CCPA) and data sovereignty requirements; self-hosted solutions place full responsibility for security, encryption key management, and uptime on the operator.
-
-- **Open-source unified collaboration is mature at the component level**—Nextcloud provides a full productivity suite , Rocket.Chat provides messaging , and Jitsi provides video . However, **no single open-source project matches the seamless integration of Microsoft Teams or Slack** in one polished experience; teams must assemble and maintain multiple tools. Organizations requiring turnkey unification should evaluate commercial platforms or invest in integration work.
-
-- Verify license terms for commercial use; Nextcloud uses AGPL-3.0 , Rocket.Chat uses MIT , Element uses Apache-2.0 , and OpenProject uses GPL-3.0.
-
-
+Last updated: October 2026
 
 ---
 
+## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS & Hosted Platforms](#saas--hosted-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+  - [Open-Source Projects Ranked by Community Adoption](#open-source-projects-ranked-by-community-adoption)
+  - [Architectural Categories & Functional Stacks](#architectural-categories--functional-stacks)
+- [Self-Hosting vs. Unified SaaS Trade-offs](#self-hosting-vs-unified-saas-trade-offs)
+- [How to Contribute](#how-to-contribute)
+- [License & Disclaimer](#license--disclaimer)
 
-**Made for IT leaders, collaboration architects, and organizations choosing their enterprise workspace stack.**  
+---
 
-Let's make enterprise collaboration more open, but with clear eyes about the integration assembly and operational responsibility that self-hosting requires.
+## Sector Overview & Market Dynamics
+
+The global enterprise collaboration market is estimated at **$60B–$73B in 2025–2026**, projected to exceed **$135B–$160B by the early 2030s** at an 11–13% CAGR driven by generative AI co-pilots, hybrid workforce persistence, and vendor consolidation. The sector exhibits a **moderately concentrated, bifurcated structure**: tech giants (Microsoft and Google) dominate baseline productivity suites and identity layers with a near-duopoly, while specialized players (Salesforce/Slack, Zoom, Atlassian, Notion, and Monday.com) fiercely contest high-value workflows across messaging, async documentation, and agile work execution.
+
+---
+
+## SaaS & Hosted Platforms
+
+The table below catalogs major commercial collaboration suites sorted in descending order by company scale (valuation or annual revenue).
+
+| SaaS Product | Company Scale (Valuation / Revenue) | Starting Paid Tier Pricing | Free Tier / Trial Limits | Core Focus & Enterprise Positioning |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Teams](https://www.microsoft.com/en-us/microsoft-teams)** | ~$3.1T Market Cap (Microsoft) | **$4.00** / user / month *(Teams Essentials, billed annually)* | **Free forever plan**: Capped at 60 minutes per group meeting, 100 participants per meeting, and 5 GB total cloud storage. No cloud recording or desktop Office apps included. | Integrated collaboration hub within Microsoft 365 combining chat, meetings, VoIP, and deep SharePoint/OneDrive integration. |
+| **[Google Workspace](https://workspace.google.com/)** | ~$2.2T Market Cap (Alphabet) | **$7.00** / user / month *(Business Starter, billed annually)* | **14-day free trial**: Up to 10 user accounts with full suite access (Gmail, Meet, Drive, Docs, Chat), capped at 500 emails/day during trial. No permanent free tier. | Real-time cloud-native office and communications suite with integrated Gemini AI, Docs, Drive, and Meet. |
+| **[Slack](https://slack.com/)** | ~$27.7B Acquisition / ~$330B Market Cap (Salesforce) | **$7.25** / user / month *(Pro plan, billed annually)* | **Free forever plan**: 90-day searchable message and file history visibility (older data archived/deleted after 1 year), 10 app integrations max, 1-on-1 audio/video huddles only, 5 GB total workspace storage. | The benchmark for channel-based team messaging, developer integrations, huddles, and workflow automation. |
+| **[Cisco Webex](https://www.webex.com/)** | ~$220B Market Cap (Cisco Systems) | **$12.00** / user / month *(Webex Meet / Starter, billed annually)* | **Free forever plan**: 40-minute limit on group meetings (unlimited 1:1 calls), up to 100 attendees, local recording only, no cloud storage or advanced AI assistant. | Highly secure video meetings, messaging, VoIP calling, and room hardware deeply optimized for enterprise network architectures. |
+| **[ByteDance (Lark)](https://www.larksuite.com/)** | ~$220B+ Valuation (ByteDance) | **$12.00** / user / month *(Pro plan, billed annually)* | **Free forever Starter plan**: Up to 20 users, 60 minutes per meeting (up to 100 participants), 100 GB shared organization cloud storage, and unlimited chat history. | All-in-one Asian-market powerhouse combining chat, collaborative docs, calendar, no-code Base workflows, and video meetings. |
+| **[Atlassian One](https://www.atlassian.com/)** | ~$45B–$50B Market Cap (Atlassian) | **$8.48** / user / month *(Jira Standard, billed annually)*; **$5.42** / user / month *(Confluence Standard)* | **Free forever plan**: Up to 10 users per product site (Jira, Confluence), 2 GB total file storage, standard Scrum/Kanban boards, 50 automation runs/month, community support only. | Unified work platform uniting Jira (issue tracking), Confluence (wiki/knowledge management), and Loom (async video). |
+| **[Zoom Workplace](https://www.zoom.com/)** | ~$22B Market Cap (Zoom Video Communications) | **$13.33–$14.16** / user / month *(Pro plan, billed annually at $159.90–$170/year)* | **Free forever Basic plan**: 40-minute limit per meeting (group and 1-on-1), up to 100 participants, local recording only (0 GB cloud storage), 3 active whiteboards, and 3 AI summary uses/month. | Video-first communications platform expanding into team chat, phone, whiteboarding, and workplace scheduling. |
+| **[Notion](https://www.notion.com/)** | ~$10B–$11B Private Valuation (Notion Labs) | **$10.00** / member / month *(Plus plan, billed annually)* | **Free forever plan**: Unlimited pages and blocks for solo users, 1,000 blocks limit for shared team workspaces (2+ members), 5 MB max file upload size, 7-day page history, and 10 guest collaborators. | Flexible all-in-one workspace blending modular docs, relational databases, wikis, project boards, and AI search. |
+| **[Monday.com](https://monday.com/)** | ~$13B–$15B Market Cap (Monday.com Ltd) | **$9.00** / seat / month *(Basic plan, billed annually, minimum 3 seats = $27/mo)* | **Free forever plan**: Strictly capped at 2 seats, up to 3 boards total, 200 items/tasks maximum across account, 500 MB storage, and zero automations/integrations. | Customizable Work OS featuring flexible tables, visual dashboards, task pipelines, and automated business workflows. |
+| **[Asana](https://asana.com/)** | ~$3B–$4B Market Cap (Asana Inc.) | **$10.99** / user / month *(Starter plan, billed annually, 2-seat minimum)* | **Free forever Personal plan**: Strictly capped at 2 users, unlimited tasks/projects, 100 MB max per file attachment, list/board/calendar views only, zero workflow automations, custom fields, or timeline/Gantt charts. | Work management suite centered on enterprise portfolio management, goals (OKRs), project tracking, and cross-functional coordination. |
+
+---
+
+## Open-Source GitHub Projects
+
+Open-source unified collaboration software offers organizations total data sovereignty, zero per-seat licensing bloat, and GDPR/HIPAA-compliant on-premises deployments.
+
+### Open-Source Projects Ranked by Community Adoption
+
+Repos are ordered below in descending order by GitHub stargazers. Each badge reflects real-time stars and links directly to that repository's stargazers community.
+
+| Rank | Project | GitHub Community | License | Primary Architectural Niche | Key Differentiators |
+| :---: | :--- | :---: | :---: | :--- | :--- |
+| 1 | **[AppFlowy](https://github.com/AppFlowy-IO/AppFlowy)** | [![GitHub stars](https://img.shields.io/github/stars/AppFlowy-IO/AppFlowy?style=social&color=white)](https://github.com/AppFlowy-IO/AppFlowy/stargazers) | AGPL-3.0 | Notion Alternative / Local-First Docs | Flutter and Rust-powered privacy-first workspace. True local data control with self-hosted cloud sync and AI plugins. |
+| 2 | **[AFFiNE](https://github.com/toeverything/AFFiNE)** | [![GitHub stars](https://img.shields.io/github/stars/toeverything/AFFiNE?style=social&color=white)](https://github.com/toeverything/AFFiNE/stargazers) | MIT | All-in-One Canvas / Notion + Miro Alternative | Merges structured text documents, mind maps, and infinite whiteboards into a single canvas with local-first CRDT sync. |
+| 3 | **[Plane](https://github.com/makeplane/plane)** | [![GitHub stars](https://img.shields.io/github/stars/makeplane/plane?style=social&color=white)](https://github.com/makeplane/plane/stargazers) | AGPL-3.0 | Jira / Linear / Asana Alternative | Modern software project management featuring issues, cycles, modules, roadmaps, analytical analytics, and rich markdown docs. |
+| 4 | **[Rocket.Chat](https://github.com/RocketChat/Rocket.Chat)** | [![GitHub stars](https://img.shields.io/github/stars/RocketChat/Rocket.Chat?style=social&color=white)](https://github.com/RocketChat/Rocket.Chat/stargazers) | MIT | Slack / Omnichannel Chat Alternative | Enterprise-grade messaging platform with team chat, omnichannel customer support inbox, Matrix federation, VoIP, and E2E encryption. |
+| 5 | **[Mattermost](https://github.com/mattermost/mattermost)** | [![GitHub stars](https://img.shields.io/github/stars/mattermost/mattermost?style=social&color=white)](https://github.com/mattermost/mattermost/stargazers) | Apache-2.0 / Commercial | Secure Dev & Ops Chat Platform | High-security collaboration suite built for technical teams in air-gapped or regulated sectors, combining chat, playbooks, and boards. |
+| 6 | **[Nextcloud Hub](https://github.com/nextcloud/server)** | [![GitHub stars](https://img.shields.io/github/stars/nextcloud/server?style=social&color=white)](https://github.com/nextcloud/server/stargazers) | AGPL-3.0 | Microsoft 365 / Google Workspace Alternative | The most complete self-hosted suite. Bundles Nextcloud Files, Talk (video/chat), Groupware (Mail/Calendar), Office, and Deck (Kanban). |
+| 7 | **[Jitsi Meet](https://github.com/jitsi/jitsi-meet)** | [![GitHub stars](https://img.shields.io/github/stars/jitsi/jitsi-meet?style=social&color=white)](https://github.com/jitsi/jitsi-meet/stargazers) | Apache-2.0 | Zoom / Google Meet Alternative | Production-tested WebRTC video conferencing with no account requirements, browser-first design, recording (Jibri), and SIP dial-in (Jigasi). |
+| 8 | **[Huly Platform](https://github.com/hcengineering/platform)** | [![GitHub stars](https://img.shields.io/github/stars/hcengineering/platform?style=social&color=white)](https://github.com/hcengineering/platform/stargazers) | EPL-2.0 | All-in-One Workplace Suite | Unified "everything workspace" consolidating task management, team chat, audio virtual office rooms, and collaborative docs in one app. |
+| 9 | **[Zulip](https://github.com/zulip/zulip)** | [![GitHub stars](https://img.shields.io/github/stars/zulip/zulip?style=social&color=white)](https://github.com/zulip/zulip/stargazers) | Apache-2.0 | Threaded Team Chat Platform | Unique topic-based threading model within streams that prevents notification overload and preserves contextual institutional memory. |
+| 10 | **[LiveKit](https://github.com/livekit/livekit)** | [![GitHub stars](https://img.shields.io/github/stars/livekit/livekit?style=social&color=white)](https://github.com/livekit/livekit/stargazers) | Apache-2.0 | Real-time Video/Audio & WebRTC Infrastructure | Distributed WebRTC SFU server powering real-time video conferencing, spatial audio, and multimodal real-time AI agents. |
+| 11 | **[Wekan](https://github.com/wekan/wekan)** | [![GitHub stars](https://img.shields.io/github/stars/wekan/wekan?style=social&color=white)](https://github.com/wekan/wekan/stargazers) | MIT | Trello / Kanban Board Alternative | Lightweight, responsive collaborative Kanban board supporting custom fields, swimlanes, subtasks, and international multi-language setups. |
+| 12 | **[OpenProject](https://github.com/opf/openproject)** | [![GitHub stars](https://img.shields.io/github/stars/opf/openproject?style=social&color=white)](https://github.com/opf/openproject/stargazers) | GPL-3.0 | Jira / MS Project Alternative | Full-lifecycle project management with Gantt charts, sprint boards, bug tracking, time reporting, and bidirectional XWiki integration. |
+| 13 | **[Element Web (Matrix)](https://github.com/element-hq/element-web)** | [![GitHub stars](https://img.shields.io/github/stars/element-hq/element-web?style=social&color=white)](https://github.com/element-hq/element-web/stargazers) | AGPL-3.0 | Secure Matrix Protocol Client | Standard web client for the federated Matrix protocol, featuring Olm/Megolm end-to-end encryption, multi-server spaces, and Slack/Teams bridges. |
+| 14 | **[BigBlueButton](https://github.com/bigbluebutton/bigbluebutton)** | [![GitHub stars](https://img.shields.io/github/stars/bigbluebutton/bigbluebutton?style=social&color=white)](https://github.com/bigbluebutton/bigbluebutton/stargazers) | LGPL-3.0 | Web Conferencing & Virtual Classrooms | Real-time presentation and conference system with breakout rooms, multi-user whiteboards, shared notes, and screen sharing. |
+| 15 | **[CryptPad](https://github.com/cryptpad/cryptpad)** | [![GitHub stars](https://img.shields.io/github/stars/cryptpad/cryptpad?style=social&color=white)](https://github.com/cryptpad/cryptpad/stargazers) | AGPL-3.0 | Zero-Knowledge Document Suite | Privacy-by-design encrypted collaboration suite. Rich text docs, spreadsheets, code pads, and kanban boards encrypted client-side. |
+| 16 | **[HedgeDoc](https://github.com/hedgedoc/hedgedoc)** | [![GitHub stars](https://img.shields.io/github/stars/hedgedoc/hedgedoc?style=social&color=white)](https://github.com/hedgedoc/hedgedoc/stargazers) | AGPL-3.0 | Collaborative Markdown Notes | Collaborative real-time markdown editor with live side-by-side rendering, MathJax, graph diagrams, and granular permission controls. |
+| 17 | **[HumHub](https://github.com/humhub/humhub)** | [![GitHub stars](https://img.shields.io/github/stars/humhub/humhub?style=social&color=white)](https://github.com/humhub/humhub/stargazers) | AGPL-3.0 | Enterprise Social Network & Intranet | Modular social intranet platform featuring internal activity streams, group spaces, user directories, file sharing, and wikis. |
+| 18 | **[Colanode](https://github.com/colanode/colanode)** | [![GitHub stars](https://img.shields.io/github/stars/colanode/colanode?style=social&color=white)](https://github.com/colanode/colanode/stargazers) | Apache-2.0 | Local-First Collaboration | Offline-first modular workspace combining team channels, rich-text documents, and relational databases. |
+| 19 | **[Collabora Online](https://github.com/CollaboraOnline/online)** | [![GitHub stars](https://img.shields.io/github/stars/CollaboraOnline/online?style=social&color=white)](https://github.com/CollaboraOnline/online/stargazers) | MPL-2.0 | Online Office Engine (LibreOffice-based) | Cloud office document suite compatible with DOCX, XLSX, and PPTX; deeply integrates with Nextcloud and ownCloud for real-time co-authoring. |
+| 20 | **[XWiki Platform](https://github.com/xwiki/xwiki-platform)** | [![GitHub stars](https://img.shields.io/github/stars/xwiki/xwiki-platform?style=social&color=white)](https://github.com/xwiki/xwiki-platform/stargazers) | LGPL-2.1 | Confluence / Enterprise Wiki Alternative | Extensible enterprise wiki platform with fine-grained rights, structured data apps, import/export migration tools, and OpenProject task pairing. |
+
+---
+
+### Architectural Categories & Functional Stacks
+
+For architects mapping out specific replacements, open-source projects typically assemble across distinct layers:
+
+1. **Full Workspace & Office Productivity Suites**: [Nextcloud Hub](https://github.com/nextcloud/server), [Collabora Online](https://github.com/CollaboraOnline/online), [CryptPad](https://github.com/cryptpad/cryptpad)
+2. **Team Chat & Asynchronous Messaging**: [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat), [Mattermost](https://github.com/mattermost/mattermost), [Zulip](https://github.com/zulip/zulip), [Element (Matrix)](https://github.com/element-hq/element-web)
+3. **Audio & Video Conferencing**: [Jitsi Meet](https://github.com/jitsi/jitsi-meet), [BigBlueButton](https://github.com/bigbluebutton/bigbluebutton), [LiveKit](https://github.com/livekit/livekit)
+4. **Task, Issue & Project Tracking (Atlassian Replacements)**: [Plane](https://github.com/makeplane/plane), [OpenProject](https://github.com/opf/openproject), [Wekan](https://github.com/wekan/wekan), [Huly](https://github.com/hcengineering/platform)
+5. **Knowledge Management & Canvas Workspaces**: [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy), [AFFiNE](https://github.com/toeverything/AFFiNE), [XWiki](https://github.com/xwiki/xwiki-platform), [HedgeDoc](https://github.com/hedgedoc/hedgedoc)
+
+---
+
+## Self-Hosting vs. Unified SaaS Trade-offs
+
+| Dimension | Hosted Enterprise SaaS (Teams / Workspace / Slack) | Self-Hosted Open-Source Stack (Nextcloud + Rocket.Chat + Jitsi) |
+| :--- | :--- | :--- |
+| **Integration Experience** | Seamless out-of-the-box turnkey experience; universal global search across files, chat, and calendars. | Component-level integration; requires deploying SSO (OIDC/SAML like Keycloak) and cross-app Webhooks. |
+| **Data Sovereignty & Compliance** | Data stored in vendor cloud; subject to US CLOUD Act, tenant lock-in, and opaque AI scraping terms. | 100% data ownership; air-gapped deployment, custom encryption key management, and strict GDPR compliance. |
+| **Operational Overhead** | Managed SLAs, zero maintenance, automatic backups, continuous feature deployments. | Sysadmin responsibility for scaling WebRTC media bridges, database backups, turn servers, and security patches. |
+| **Total Cost of Ownership** | Predictable per-seat monthly subscription fee scaling directly with organization headcount. | Server infrastructure (compute/bandwidth) and engineering time, with zero incremental licensing fees. |
+
+---
+
+## How to Contribute
+
+Contributions are welcome! Please follow these guidelines:
+
+1. Fork this repository and create your branch (`git checkout -b feature/new-tool`).
+2. Add or update entries matching the existing markdown formatting and factual standards.
+3. Include links to official repositories or official websites.
+4. Verify GitHub star badges and URLs before submitting.
+5. Submit a descriptive Pull Request.
+
+---
+
+## License & Disclaimer
+
+- Curated with care for IT directors, software architects, and DevOps engineers evaluating enterprise collaboration stacks.
+- All product names, logos, and brands are property of their respective owners.
+- Ensure compliance with applicable open-source licenses (AGPL-3.0, GPL-3.0, EPL-2.0, MPL-2.0, Apache-2.0, MIT) before commercial multi-tenant distribution or deployment.
